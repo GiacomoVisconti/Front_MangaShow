@@ -6,7 +6,9 @@ export default function Jumbo({ mangas }) {
     const [i, setI] = useState(null);
     return (
         <div className='jumbo'>
+
             <section className="loop-images" style={{ '--bg': 'white' }}>
+                <h1 className="display-1 text-center my-5">MangaShow</h1>
                 <div className="carousel-track" style={{ '--time': '60s', '--total': `${mangas?.length}` }}>
 
                     {mangas?.map((element, index) => {
@@ -16,7 +18,6 @@ export default function Jumbo({ mangas }) {
                             </Link>
                         )
                     })}
-                    <span className="scroll-down">Scroll down <span className="arrow">↓</span></span>
                 </div>
 
             </section >

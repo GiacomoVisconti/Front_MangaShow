@@ -22,7 +22,7 @@ section {
 .loop-images {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	flex-direction: column;
 
 }
@@ -230,3 +230,9 @@ animation-play-state: paused;
   .manga-page { transform-origin: right 45%; }
 }
 
+.bg-pink{
+	background-color: pink;
+}
+.bg-rose{
+	background-color: rgb(233, 134, 151);
+}

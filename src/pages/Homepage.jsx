@@ -19,12 +19,11 @@ export default function Homepage() {
 
     return (
         <>
-
             <Jumbo mangas={mangas}></Jumbo>
 
-            <div className="container my-5">
+            <div className="container py-5">
 
-                <h3 className="text-center my-5 display-3">Sfoglia il nostro catalogo</h3>
+                <h3 className="text-center py-5 display-3">Sfoglia il nostro catalogo</h3>
 
                 <div className="row d-flex">
                     {
