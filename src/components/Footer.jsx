@@ -5,9 +5,9 @@ export default function Footer() {
 
                 <div className="d-flex d-flex justify-content-between align-items-center flex-wrap mt-3 ">
                     <ul className="list-unstyled d-flex mb-0">
-                        <li><a href="/platforms" className=" mx-2">Link1</a></li>
-                        <li><a href="/about" className=" mx-2">Link2</a></li>
-                        <li><a href="/reports" className=" mx-2">Link3</a></li>
+                        <li><a href="/authors" className=" mx-2">Authors</a></li>
+                        <li><a href="/" className=" mx-2">Mangas</a></li>
+                        <li><a href="/genres" className=" mx-2">Genres</a></li>
                     </ul>
                     <div>
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2 "><i className="bi bi-facebook m-1"></i>Facebook</a>

@@ -13,7 +13,7 @@ export default function Jumbo({ mangas }) {
 
                     {mangas?.map((element, index) => {
                         return (
-                            <Link to={''} key={index} className="carousel-item" style={{ '--i': `${index + 1}` }}>
+                            <Link to={`/mangas/${element.id}`} key={index} className="carousel-item" style={{ '--i': `${index + 1}` }}>
                                 <img className='rounded image-motion' src={element.image_url} alt="image" />
                             </Link>
                         )

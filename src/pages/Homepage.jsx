@@ -29,8 +29,8 @@ export default function Homepage() {
                     {
                         mangas?.map((element, index) => {
                             return (
-                                <Link to={`/mangas/${element.id}`} className="col-3 py-3">
-                                    <div className="manga-card" key={index}>
+                                <Link key={index} to={`/mangas/${element.id}`} className="col-3 py-3">
+                                    <div className="manga-card">
                                         <img src={element.image_url} alt={element.title} className="manga-cover" />
                                         <div className="manga-page">
                                             <div className="manga-trama">

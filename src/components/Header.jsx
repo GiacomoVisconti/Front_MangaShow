@@ -1,10 +1,12 @@
+import { Link, NavLink } from "react-router-dom";
+
 export default function Header() {
     return (
         <nav
             className="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark py-3"
         >
             <div className="container">
-                <a className="navbar-brand" href="#">MangaShow</a>
+                <Link className="navbar-brand" to={"/"}>MangaShow</Link>
                 <button
                     className="navbar-toggler d-lg-none"
                     type="button"
@@ -19,36 +21,19 @@ export default function Header() {
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#" aria-current="page"
-                            >Home
-                                <span className="visually-hidden">(current)</span></a
-                            >
+                            <NavLink className="nav-link active" to={"/"} aria-current="page"
+                            >Mangas</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <NavLink className="nav-link active" to={"/authors"} aria-current="page"
+                            >Authors</NavLink>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a
-                                className="nav-link dropdown-toggle"
-                                href="#"
-                                id="dropdownId"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >Dropdown</a
-                            >
-                            <div
-                                className="dropdown-menu"
-                                aria-labelledby="dropdownId"
-                            >
-                                <a className="dropdown-item" href="#"
-                                >Action 1</a
-                                >
-                                <a className="dropdown-item" href="#"
-                                >Action 2</a
-                                >
-                            </div>
+                        <li className="nav-item">
+                            <NavLink className="nav-link active" to={"/genres"} aria-current="page"
+                            >Genres</NavLink>
                         </li>
+
+
                     </ul>
 
                 </div>
