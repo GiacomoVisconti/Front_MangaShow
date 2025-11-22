@@ -49,15 +49,15 @@ export default function SingleManga() {
         <div className="container pb-5">
 
             <h1 className="display-3 text-center pt-5">{manga?.title}</h1>
-            <div className="row py-5">
-                <div className="col-12 d-flex gap-5">
+            <div className="">
+                <div className="row d-flex py-5">
                     {/* IMMAGINE */}
-                    <div className="col-8 d-flex justify-content-center">
+                    <div className="col-sm-12 col-md-8 col-lg-8 d-flex justify-content-center">
                         <img className="img-fluid shadow-lg" src={manga?.image_url} alt="" />
                     </div>
 
                     {/* INFORMAZIONI */}
-                    <div className="col-4">
+                    <div className="col-sm-12 col-md-4 col-lg-4">
                         <div className="d-flex flex-column gap-3 fs-5 pt-5">
                             <div className="d-flex gap-2">
                                 <p className="fw-bold">Year of Publication: </p>
@@ -99,6 +99,7 @@ export default function SingleManga() {
 
             {/* RECENSIONI */}
             <div className="py-5">
+                <hr className="border border-black" />
                 <div className="d-flex justify-content-between align-items-center">
                     <p className="py-3 display-6">Recensioni ({manga?.reviews.length})</p>
                     <div>
