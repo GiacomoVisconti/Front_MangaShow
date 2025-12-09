@@ -68,11 +68,11 @@ export default function SingleManga() {
                                 <span className="fw-bold">Synopsis: </span>
                                 <span>{manga?.synopsis}</span>
                             </div>
-                            <p>Author: <span>{manga?.author.firstName} {manga?.author.lastName}</span></p>
+                            <p>Author: <span>{manga?.author?.firstName} {manga?.author?.lastName}</span></p>
                             <div>
                                 <span>Genres: </span>
                                 <div className="d-flex gap-3">
-                                    {manga?.genres.map((element, index) => {
+                                    {manga?.genres?.map((element, index) => {
                                         return (
                                             <div key={index} className={
                                                 element.name === 'Commedia' ? 'badge bg-warning text-dark' :
